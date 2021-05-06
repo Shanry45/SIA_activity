@@ -1,0 +1,235 @@
+<html>
+    <head>
+<title>Welcome!</title>
+</head>
+<style>
+body{
+background-image: url(bg.jpg);
+}
+
+/*lawas sa login na form*/
+
+.Login{
+    text-align: center;
+    padding: 50px;
+	width: 45%;
+    background-color:#4a4b65;
+	position: relative; 
+    box-sizing: border-box;
+
+    left: 25px;
+    top:55px;
+    opacity: 0.8;
+    border-radius: 25px;
+    font-family: fantasy;
+    color: aquamarine;
+
+}
+/* possition sa pang fillupan email password . . . .etc */
+
+.Email{
+    position: relative;
+    bottom: 65px;
+    font-size: 25px;
+    right: 15px;
+
+
+}
+.Email input{
+    font-size: 30px;
+}
+.Passwrd{
+    position: relative;
+    bottom: 55px;
+    font-size: 25px;
+    right: 5px;
+}
+.Passwrd input{
+    font-size: 28px;
+}
+.Logins{
+    position: relative;
+    bottom: 55px;
+    right: 200px; 
+    font-size: 25px;
+    color: #ecebff;
+}
+
+.Register{
+    text-align: center;
+    padding: 45px;
+	width: 45%;
+    background-color:#4a4b65;
+	position: relative; 
+    box-sizing: border-box;
+
+    left: 700px;;
+    bottom:330px;
+    border-radius: 25px;
+    font-family: fantasy;
+    color: aquamarine;
+    opacity: 0.9;
+
+}
+.Reg{
+    position: relative;
+    bottom: 55px;
+    right: 190px; 
+    font-size: 25px;
+    color: #ecebff; 
+}
+.Name{
+    position: relative;
+    bottom: 65px;
+    font-size: 25px;
+    right: 15px;
+  
+}
+.Name input{
+    font-size: 25px;
+}
+.Cp{
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    left: 25px;
+}
+
+.Email2{
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+    right: 25px;
+}
+.pass{
+    position: relative;
+    top: 35px;
+    font-size: 25px;
+    right: 2px;
+}
+
+.age{
+    position: relative;
+    top: 45px;
+    font-size: 25px;
+    right: 35px;
+}
+.bdate{
+    position: relative;
+    top: 55px;
+    font-size: 25px;
+    right: 45px;  
+}
+
+/* button  */
+
+.but1{
+ background-color: #41CFF2;
+ color: white;
+ padding: 15px 25px;
+ display: inline-block;
+ font-size: 25px;
+ transition-duration: 0.4s;
+ border-radius: 8px;
+ font-family: Tahoma;
+ opacity: 0.9;
+ cursor: pointer;
+ position: relative;
+ right: 175px;
+ top: 55px;
+}
+
+/* Color sa button */
+ .but1{
+  color: black; 
+  border: 2px solid #41CFF2;
+
+  /* hover effect sa button */
+
+}.but1:hover{
+	background-color: #08B7E2;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+</style>
+<body>
+
+    <div class= "Login">
+      <div class="Logins">
+          <h1>Log-in</h1>
+      </div>
+
+      <!-- Para ma restrict ang user if dili ma fill-upan tanan -->
+      <div class="form-popup" id="myForm">
+            <form action="Log_reg.html" class="form-container">
+
+      <!-- Email input -->
+      <div class="Email">
+            <label for="email"><b>email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+    </div>
+
+    <!-- Password input -->
+     <div class="Passwrd">
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <a target="_parent"><button class="but1">Login</button></a>
+    </form>
+    </div>
+
+    </div>  
+    </div>
+    </div>
+<div class = "Register">
+    <div class ="Reg">
+        <h1>Register</h1>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="Log_reg.html" class="form-container">
+        <div class="Name">
+
+                <!-- Full name Input -->
+                <label for="Name"><b>full Name:</b></label>
+                <input type="text" placeholder="Enter your full name" name="email" required>
+                
+                <div class="done">
+
+                <!-- Phone number input -->    
+                <div class="Cp">
+                    <label for="Cp"><b>Phone Number:</b></label>
+                    <input type="text" placeholder="Phone Number" name="email" required>
+            </div>
+                <!-- Email input -->
+                <div class="Email2">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" required>
+
+            </div>
+             <!-- Password input -->
+            <div class="pass">
+                <label for="password"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="email" required>
+            </div>
+
+                <!-- Age input -->
+                <div class="age">
+                    <label for="age"><b>Age:</b></label>
+                    <input type="age" placeholder="Age" name="email" required>
+            </div>
+                
+                <!-- Birthda input -->
+                <div class="bdate">
+                    <label for ="Date">Birth Date:</label>
+                    <input type="Date" id ="Schedule"name="Date" required>
+            </div>
+                    <a target="_parent"><button class="but1">done</button></a>
+    
+</div>            
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

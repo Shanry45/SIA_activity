@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Homepage!</title>
+</head>
+<style>
+      body{
+    background-image: url(bg.jpg);
+}
+
+/* color,size sa background */
+
+.Body{
+    text-align: center;
+    padding: 100px;
+	margin: 35px;
+    background-color:#4a4b65;
+	position: relative; 
+    box-sizing: border-box;
+    width: 65%;
+    left:200px;
+    top:35px;
+    opacity: 0.8;
+    border-radius: 25px;
+    font-family: fantasy;
+    color: aquamarine;
+}
+/*size and possitioning sa buttons */
+
+.buttons button {
+  color: white;
+  padding: 25px 100px;
+  text-align: center;
+  display: inline-block;
+  font-size: 46px;
+  margin: auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-sizing: border-box;
+  right:95px;
+  bottom:35px;
+  position: relative;
+  font-family: Tahoma;
+  opacity: 0.9;
+
+}
+
+/* ang app, SR, and Log kay name sa mga bottons */
+/* ang sulod is ilang sizes og colors */
+ .App{
+    background-color: #0fb4ca;
+    position: relative;
+    left:0px;
+    top:25px;
+    color: black; 
+    border: 2px solid #0fb4ca;
+}
+
+ .App:hover{
+  background-color: #032125;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+.SR{
+    background-color: #0fb4ca;
+    position: relative;
+    left:0px;
+    top:45px;
+    color: black; 
+    border: 2px solid #0fb4ca; 
+}
+
+.SR:hover{
+    background-color: #032125;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+.Log{
+    background-color: #0fb4ca;
+    position: relative;
+    left:0px;
+    top:65px;
+    color: black; 
+    border: 2px solid #0fb4ca;  
+}
+.Log:hover{
+  background-color: #032125;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+
+.hp{
+    position: absolute;
+    bottom: 395px;
+    left: 15px; 
+    font-size: 25px;
+    color: #ecebff;
+}
+
+
+</style>
+<body>
+<div>
+
+    <div class="Body">
+        <div class="hp">
+            <h1>Home Page</h1>
+        </div>
+        <div class="buttons">
+       <!-- Buttons para sa appointments records og pang log out -->
+        <a href="" target="_parent"><button class="App">View Appointments</button></a>
+        <a href="" target="_parent"><button class="SR">Student Records</button></a>
+        <a href="index.php" target="_parent"><button class="Log">Log Out</button></a>
+    </div>
+    </div>
+</div>
+</body>
+</html>

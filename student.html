@@ -1,0 +1,169 @@
+<html>
+    <head>
+    <title>Schedule!</title>
+</head>
+<style>
+body{
+    background-image: url(bg.jpg);
+    
+}
+/* color,size sa background */
+
+.Form{
+    text-align: center;
+    padding: 200px;
+	margin: 35px;
+    background-color:#4a4b65;
+	position: relative; 
+    box-sizing: border-box;
+    width: 65%;
+    left:200px;
+    top:35px;
+    opacity: 0.8;
+    border-radius: 25px;
+    font-family: fantasy;
+    color: aquamarine;
+    
+			
+}
+/* possitioning sa date time og  form*/
+.Form label {
+    position: absolute;
+    left: 25;
+    font-size: 25px;
+    top: 125px;
+}
+
+.Form select{
+    position: absolute;
+    top:125px;
+    left: 335; 
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+.Date label{
+    position: absolute;
+    left: 25;
+    top: 175;
+    font-size: 25px;
+    
+}
+.Date input{
+     position: absolute;
+    left: 190;
+    top: 175;
+    font-size: 20px;
+    cursor: pointer;
+  
+}
+.Time label{
+    position: absolute;
+    left: 25;
+    top: 225;
+    font-size: 25px;
+    
+}
+.Time select{
+    position: absolute;
+    left: 300;
+    top: 225;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Back{
+position: absolute;
+  top: 15;
+  left: 25px;
+  font-size: 45px;
+}
+/* possition, color og uban pa sa button */
+.but1{
+ position: absolute;
+ bottom: 15;
+ right: 15;
+ background-color: #41CFF2;
+ color: white;
+ padding: 25px 100px;
+ display: inline-block;
+ font-size: 35px;
+ transition-duration: 0.4s;
+ border-radius: 8px;
+ font-family: Tahoma;
+ opacity: 0.9;
+ cursor: pointer;
+
+} .but1{
+  color: black; 
+  border: 2px solid #41CFF2;
+}
+.but1:hover{
+	background-color: #08B7E2;
+  color: white;
+
+}
+
+.but1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+<body>
+   <div class="BG"> 
+   </div>
+   <div class="Back">
+   <a href="index.php" ><button class="but1">Return</button></a>
+   </div>
+   <div class = "Form">
+       <div class = "Back">
+        <p1>Please fill the requirements:</p1>     
+       </div>
+
+       <!-- Department na option -->
+     <div class = "Option">
+        <label for="Department">Please choose a department:</label>
+        <select name = "Departments" id="Departments">
+        <option value="CITC">CITC</option>
+        <option value="COT">COT</option>
+        <option value="CSM">CSM</option>
+        <option value="CEA">CEA</option>
+        <option value="CSTE">CSTE</option>
+     </select>
+     </div>
+
+     <!-- sa date input -->
+     <div class = "Date">
+     <label for ="Date">Date Schedule:</label>
+     <input type="Date" id ="Schedule" name="Date" required>
+    
+    </div>
+
+    <!--Time schedule na part -->
+     <div class = "Time">
+        <label for="Time">Please choose a schedule:</label>
+        <select name = "Time" id="Time">
+        <option value="10:00 - 10:30 AM">10:00 - 10:30 AM</option>
+        <option value="10:30 - 11:00 AM">10:30 - 11:00 AM</option>
+        <option value="11:00 - 11:30 AM">11:00 - 11:30 AM</option>
+        <option value="11:30 - 12:00 PM">11:30 - 12:00 PM</option>
+        <option value="1:00 -  1:30 PM">1:00 -  1:30 PM</option>
+        <option value="1:30 -  2:00 PM">1:30 -  2:00 PM</option>
+        <option value="2:00 -  2:30 PM">2:00 -  2:30 PM</option>
+        <option value="2:30 -  3:00 PM">2:30 -  3:00 PM</option>
+        <option value="3:00 -  3:30 PM">3:00 -  3:30 PM</option>
+        <option value="3:30 -  4:00 PM">3:30 -  4:00 PM</option>
+        <option value="4:00 -  4:30 PM">4:00 -  4:30 PM</option>
+        <option value="4:30 -  5:00 PM">4:30 -  5:00 PM</option>
+
+
+     </select>
+     </div>
+ <!--ang button para ma submit -->
+     <div class = "Submit">
+        <a href="Student_done.html" target="_parent"><button class="but1">Submit</button></a>
+     </div>
+</div>
+</body>
+</html>
